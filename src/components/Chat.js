@@ -36,7 +36,6 @@ class Chat extends Component {
         });
     }
 
-    // Send typing event
     sendTypingEvent(event) {
         this.state.currentUser
             .isTypingIn({
@@ -94,6 +93,7 @@ class Chat extends Component {
                             this.setState({
                                 typingUsers: [...this.state.typingUsers, user.name],
                             })
+                            console.log(this.state.typingUsers);
                         },
                         onUserStoppedTyping: user => {
                             this.setState({
@@ -111,6 +111,7 @@ class Chat extends Component {
                 })
             })
             .catch(error => console.error('error', error))
+
     }
 
     render() {
@@ -132,7 +133,7 @@ class Chat extends Component {
             type = "button"
             onClick = { this.sendMessage }
             value = "Send Chat"/>
-            <TypingIndicator typingUsers={this.state.typingUsers} /> 
+            <TypingIndicator typingUsers={this.state.typingUsers} />
             </div> 
             
             </div>
