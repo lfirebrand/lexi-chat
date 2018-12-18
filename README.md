@@ -25,10 +25,10 @@ Used only for testing purposes, this allows Pusher's servers to generate a token
 # Create a Room
 Go back to Instance Inspector and click on Rooms and click Create New Room under your desired User. Take note of the roomId. Open up `chat.js` and update the roomId instance.
 
-Start the dev server:
+# Start the dev server
 `npm start`
 
-Start the Node server:
+# Start the Node server
 `node server`
 
 # Followup
