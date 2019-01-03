@@ -1,4 +1,4 @@
-# Messanger app using React and Chatkit
+# Messenger app using React and Chatkit
 
 Created with React and Pusher Chatkit
 
